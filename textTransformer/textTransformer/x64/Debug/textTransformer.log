@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\elish\Documents\GitHub\TextTransformer-\textTransformer\textTransformer\main.cpp(52,1): warning C4715: 'saveFile': not all control paths return a value
+  textTransformer.vcxproj -> C:\Users\elish\Documents\GitHub\TextTransformer-\textTransformer\x64\Debug\textTransformer.exe

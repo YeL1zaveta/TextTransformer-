@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "output.txt",
+              "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\output.txt",
+              "RelativeDocumentMoniker": "textTransformer\\output.txt",
+              "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\output.txt",
+              "RelativeToolTip": "textTransformer\\output.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-04T14:51:50.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "input.txt",
+              "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\input.txt",
+              "RelativeDocumentMoniker": "textTransformer\\input.txt",
+              "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\input.txt",
+              "RelativeToolTip": "textTransformer\\input.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-08-04T14:51:33.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp",
+              "RelativeDocumentMoniker": "textTransformer\\main.cpp",
+              "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp",
+              "RelativeToolTip": "textTransformer\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-01T08:22:38.408Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
