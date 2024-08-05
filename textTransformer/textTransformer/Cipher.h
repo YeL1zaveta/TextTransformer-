@@ -4,9 +4,9 @@ using namespace std;
 
 class Cipher {
 private:
-    const string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const string MONO_KEY = "QWERTYUIOPASDFGHJKLZXCVBNM";
-    int caesarShift=3; 
+    const static string ALPHABET;  
+    const static string MONO_KEY;
+    static int shift; 
 
 public:
     Cipher (){}
@@ -14,6 +14,7 @@ public:
    static string CesarEncrypt(string text, int shift);
    static string CesarDecrypt(string text, int shift);
 
-
+   static string MonoEncrypt(string text);
+   static string MonoDecrypt(string text);
 
 };

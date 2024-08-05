@@ -33,7 +33,7 @@ string saveFile(string filename, string result) {
 
 }
 
-int main() {
+int main2() {
     string inputFileName = "input.txt";
     string text = readFile(inputFileName);
     int shift = 3;
@@ -45,4 +45,67 @@ int main() {
     cout << "Decrypted text: " << decrypted << endl;
     return 0;
 
+}
+
+int main() {
+    int choise;
+
+    do {
+        cout << "Choise option: " << endl;
+        cout << "1.CESAR CHIPER " << endl;
+        cout << "2.MONOALPHABEIC CHIPER " << endl;
+        cout << "3.EXIT" << endl;
+        cout << "ENTER CHOISE:" << endl;
+        cin >> choise;
+        switch (choise) {
+        case 1: {
+            int x;
+            do {
+                cout << "1.ENCRYPT CESAR " << endl;
+                cout << "2. DECRYPT CESAR " << endl;
+                cout << "3.EXIT " << endl;
+                cin >> x;
+                switch (x) {
+                case 1:{
+                    int shift;
+                    string text;
+                    cout << "ENTER KEY : ";
+                    cin >> shift;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string encrypted = Cipher::CesarEncrypt(text, shift);
+
+                    cout << "Original text: " << text << endl;
+                    cout << "Encrypted text: " << encrypted << endl;
+
+                }
+                case 2: {
+                    int shift;
+                    string text;
+                    cout << "ENTER KEY : ";
+                    cin >> shift;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string decrypted = Cipher::CesarDecrypt(text, shift);
+
+                    cout << "Original text: " << text << endl;
+                    cout << "Decrypted text: " << decrypted << endl;
+                }
+
+                }
+
+            } while (x != 3);
+
+        }
+        case 2: {
+
+        }
+        case 3: {
+
+        }
+
+        }
+
+    } while (choise != 4);
+    return 0;
 }
