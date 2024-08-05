@@ -33,20 +33,6 @@ string saveFile(string filename, string result) {
 
 }
 
-int main2() {
-    string inputFileName = "input.txt";
-    string text = readFile(inputFileName);
-    int shift = 3;
-    string encrypted = Cipher::CesarEncrypt(text, shift);
-    string decrypted = Cipher::CesarDecrypt(encrypted, shift);
-
-    cout << "Original text: " << text << endl;
-    cout << "Encrypted text: " << encrypted << endl;
-    cout << "Decrypted text: " << decrypted << endl;
-    return 0;
-
-}
-
 int main() {
     int choise;
 
@@ -62,7 +48,7 @@ int main() {
             int x;
             do {
                 cout << "1.ENCRYPT CESAR " << endl;
-                cout << "2. DECRYPT CESAR " << endl;
+                cout << "2.DECRYPT CESAR " << endl;
                 cout << "3.EXIT " << endl;
                 cin >> x;
                 switch (x) {
@@ -77,7 +63,7 @@ int main() {
 
                     cout << "Original text: " << text << endl;
                     cout << "Encrypted text: " << encrypted << endl;
-
+                    break;
                 }
                 case 2: {
                     int shift;
@@ -90,22 +76,57 @@ int main() {
 
                     cout << "Original text: " << text << endl;
                     cout << "Decrypted text: " << decrypted << endl;
+                    break;
+                    }
+
+                }
+
+            } while (x != 3);
+            break;
+        }
+        case 2: {
+            int x;
+            do {
+                cout << "1.ENCRYPT MONOALPHABEIC " << endl;
+                cout << "2.DECRYPT MONOALPHABEIC " << endl;
+                cout << "3.EXIT " << endl;
+                cin >> x;
+                switch (x) {
+                case 1: {
+                    string text;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string encrypted = Cipher::MonoEncrypt(text);
+
+                    cout << "Original text: " << text << endl;
+                    cout << "Encrypted text: " << encrypted << endl;
+                    break;
+                }
+                case 2: {
+                    string text;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string decrypted = Cipher::MonoDecrypt(text);
+
+                    cout << "Original text: " << text << endl;
+                    cout << "Decrypted text: " << decrypted << endl;
+                    break;
                 }
 
                 }
 
             } while (x != 3);
-
-        }
-        case 2: {
-
         }
         case 3: {
+            break;
+
+        }
+        default:
+            cout << "Invalid choice. Please try again." << endl;
+            break;
 
         }
 
-        }
-
-    } while (choise != 4);
+    } while (choise != 3);
     return 0;
 }
