@@ -116,6 +116,7 @@ int main() {
                 }
 
             } while (x != 3);
+            break;
         }
         case 3: {
             break;
