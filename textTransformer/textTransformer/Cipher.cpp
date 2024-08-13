@@ -61,18 +61,19 @@ string Cipher::MonoDecrypt(string text) {
 }
 
 string Cipher::AffineEncrypt(const string text, int key1, int key2){
-    string result = "";
+    std::string result = "";
 
     for (int i = 0; i < text.length(); i++) {
-        if (text[i] != ' ') {
-
-            char encryptedAff = ((((char)(key1 * (text[i] - 'A')) + key2) % 26) + 'A');
-            result += encryptedAff;
+        if (isalpha(text[i])) { // Sprawdzenie, czy znak jest liter¹
+            // Przekszta³cenie litery zgodnie ze wzorem Affine
+            char base = isupper(text[i]) ? 'A' : 'a'; // Ustal bazê, czy litera jest wielka, czy ma³a
+            int x = text[i] - base; // Zamiana litery na indeks w alfabecie
+            char encryptedAff = (char)(((key1 * x + key2) % 26) + base); // Szyfrowanie i powrót do wielkoœci litery
+            result += encryptedAff; // Dodanie zaszyfrowanego znaku do wyniku
         }
         else {
-            result += text[i];
+            result += text[i]; // Jeœli znak jest spacj¹, dodaj go bez zmian
         }
     }
     return result;
-
 }

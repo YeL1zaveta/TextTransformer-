@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\Cipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\Cipher.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|solutionrelative:textTransformer\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24400F49-46C1-400E-A2A2-299B514EF064}|textTransformer\\textTransformer.vcxproj|C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\Cipher.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -46,13 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp",
               "RelativeDocumentMoniker": "textTransformer\\main.cpp",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\main.cpp",
               "RelativeToolTip": "textTransformer\\main.cpp",
-              "ViewState": "AQIAAI0AAAAAAAAAAAAAAJgAAAAAAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAAAJoAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-01T08:22:38.408Z",
               "EditorCaption": ""
@@ -71,15 +71,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Cipher.cpp",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\Cipher.cpp",
               "RelativeDocumentMoniker": "textTransformer\\Cipher.cpp",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\TextTransformer-\\textTransformer\\textTransformer\\Cipher.cpp",
               "RelativeToolTip": "textTransformer\\Cipher.cpp",
-              "ViewState": "AQIAADgAAAAAAAAAAAAAAEoAAAAFAAAA",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAE0AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-04T22:07:06.929Z"
+              "WhenOpened": "2024-08-04T22:07:06.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
