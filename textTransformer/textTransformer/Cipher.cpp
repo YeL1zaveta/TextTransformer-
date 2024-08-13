@@ -59,3 +59,20 @@ string Cipher::MonoDecrypt(string text) {
 
     return plaintext;
 }
+
+string Cipher::AffineEncrypt(const string text, int key1, int key2){
+    string result = "";
+
+    for (int i = 0; i < text.length(); i++) {
+        if (text[i] != ' ') {
+
+            char encryptedAff = ((((char)(key1 * (text[i] - 'A')) + key2) % 26) + 'A');
+            result += encryptedAff;
+        }
+        else {
+            result += text[i];
+        }
+    }
+    return result;
+
+}

@@ -17,4 +17,7 @@ public:
    static string MonoEncrypt(string text);
    static string MonoDecrypt(string text);
 
+   static string AffineEncrypt(string text, int key1,int key2);
+   static string AffineDecrypt(string text, int key1,int key2);
+
 };

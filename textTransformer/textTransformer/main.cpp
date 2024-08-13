@@ -4,6 +4,7 @@
 #include "Cipher.h"
 using namespace std;
 
+/*
 string readFile(const string& filename) {
     ifstream inputFile(filename);
 
@@ -32,7 +33,7 @@ string saveFile(string filename, string result) {
     outputFile.close();
 
 }
-
+*/
 int main() {
     int choise;
 
@@ -40,7 +41,8 @@ int main() {
         cout << "Choise option: " << endl;
         cout << "1.CESAR CHIPER " << endl;
         cout << "2.MONOALPHABEIC CHIPER " << endl;
-        cout << "3.EXIT" << endl;
+        cout << "3.AFFINE CHIPER " << endl;
+        cout << "4.EXIT" << endl;
         cout << "ENTER CHOISE:" << endl;
         cin >> choise;
         switch (choise) {
@@ -119,8 +121,42 @@ int main() {
             break;
         }
         case 3: {
-            break;
+            int x;
+            do {
+                cout << "1.ENCRYPT AFFINE " << endl;
+                cout << "2.DECRYPT AFFINE " << endl;
+                cout << "3.EXIT " << endl;
+                cin >> x;
+                switch (x) {
+                case 1: {
+                    string text;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string encrypted = Cipher::AffineEncrypt(text,5,8);
 
+                    cout << "Original text: " << text << endl;
+                    cout << "Encrypted text: " << encrypted << endl;
+                    break;
+                }
+                case 2: {
+                    string text;
+                    cout << "ENTER TEXT : ";
+                    cin >> text;
+                    string decrypted = Cipher::MonoDecrypt(text);
+
+                    cout << "Original text: " << text << endl;
+                    cout << "Decrypted text: " << decrypted << endl;
+                    break;
+                }
+
+                }
+
+            } while (x != 3);
+            break;
+        }
+        case 4: {
+            cout << "EXIT" << endl;
+            break;
         }
         default:
             cout << "Invalid choice. Please try again." << endl;
@@ -128,6 +164,7 @@ int main() {
 
         }
 
-    } while (choise != 3);
+    } while (choise != 4);
+
     return 0;
 }
