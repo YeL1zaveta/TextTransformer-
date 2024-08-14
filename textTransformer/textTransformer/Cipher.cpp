@@ -35,8 +35,10 @@ string Cipher::MonoEncrypt(string text) {
 
     for (char ch : text) {
         if (isalpha(ch)) {
+            bool isUpperCase = isupper(ch);
             size_t index = ALPHABET.find(toupper(ch));
-              ciphertext += MONO_KEY[index];
+            char encryptedChar = MONO_KEY[index];
+            ciphertext += isUpperCase ? encryptedChar : tolower(encryptedChar);
             
         }
         else {
@@ -52,8 +54,10 @@ string Cipher::MonoDecrypt(string text) {
 
     for (char ch : text) {
         if (isalpha(ch)) {
+            bool isUpperCase = isupper(ch);
             size_t index = MONO_KEY.find(toupper(ch));
-            plaintext += ALPHABET[index];
+            char decrypttext = ALPHABET[index];
+            plaintext += isUpperCase ? decrypttext : tolower(decrypttext);
             
         }
         else {
