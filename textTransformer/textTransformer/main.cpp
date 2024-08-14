@@ -142,7 +142,7 @@ int main() {
                     string text;
                     cout << "ENTER TEXT : ";
                     cin >> text;
-                    string decrypted = Cipher::MonoDecrypt(text);
+                    string decrypted = Cipher::AffineDecrypt(text, 5, 8);;
 
                     cout << "Original text: " << text << endl;
                     cout << "Decrypted text: " << decrypted << endl;

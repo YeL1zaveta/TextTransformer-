@@ -61,18 +61,47 @@ string Cipher::MonoDecrypt(string text) {
 }
 
 string Cipher::AffineEncrypt(const string text, int key1, int key2){
-    std::string result = "";
+    string result = "";
 
     for (int i = 0; i < text.length(); i++) {
-        if (isalpha(text[i])) { // Sprawdzenie, czy znak jest liter¹
-            // Przekszta³cenie litery zgodnie ze wzorem Affine
-            char base = isupper(text[i]) ? 'A' : 'a'; // Ustal bazê, czy litera jest wielka, czy ma³a
-            int x = text[i] - base; // Zamiana litery na indeks w alfabecie
-            char encryptedAff = (char)(((key1 * x + key2) % 26) + base); // Szyfrowanie i powrót do wielkoœci litery
-            result += encryptedAff; // Dodanie zaszyfrowanego znaku do wyniku
+        if (isalpha(text[i])) { 
+            
+            char base = isupper(text[i]) ? 'A' : 'a'; 
+            int x = text[i] - base; 
+            char encryptedAff = (char)(((key1 * x + key2) % 26) + base); 
+            result += encryptedAff; 
         }
         else {
-            result += text[i]; // Jeœli znak jest spacj¹, dodaj go bez zmian
+            result += text[i]; 
+        }
+    }
+    return result;
+}
+
+int mod(int a,int b) {
+    a = a % b;
+    for (int i = 0; i < b;i++) {
+        if ((a * i) % b == 1) {
+            return i;
+        }
+    }
+    return - 1;
+}
+
+string Cipher::AffineDecrypt(string text, int key1, int key2) {
+    string result = "";
+
+    int a = mod(key1, 26);
+    for (int i = 0; i < text.length(); i++) {
+        if (isalpha(text[i])) {
+
+            char base = isupper(text[i]) ? 'A' : 'a';
+            int x = text[i] - base;
+            char encryptedAff = (char)(((a*(x - key2+26)) % 26) + base);
+            result += encryptedAff;
+        }
+        else {
+            result += text[i];
         }
     }
     return result;
