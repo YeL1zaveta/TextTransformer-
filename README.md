@@ -19,7 +19,7 @@ After running the aplication,you will see the main menu,which allows to perfom v
 
 4.EXIT
 
-##Examples of use:
+## Examples of use:
 ![image](https://github.com/user-attachments/assets/1aedf1da-c676-4013-a52a-8d537b4525d0)
 ![image](https://github.com/user-attachments/assets/0364204b-842c-4d94-afae-15966f384bd4)
 ![image](https://github.com/user-attachments/assets/c3fd90d8-8160-4fdb-8ff2-e632da96955d)
