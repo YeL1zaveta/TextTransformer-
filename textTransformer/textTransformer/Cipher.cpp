@@ -10,12 +10,11 @@ const string Cipher::MONO_KEY = "QWERTYUIOPASDFGHJKLZXCVBNM";
 
 string Cipher::CesarEncrypt(string text,int shift) {
     string result = "";
-    shift = shift % 26;
     for (int i = 0; i < text.length(); i++) {
         char c = text[i];
         if (isalpha(c)) {
             char base = isupper(c) ? 'A' : 'a';
-            char ch = (c - base - shift + 26) % 26 + base;
+            char ch = (c - base + shift ) % 26 + base;
             result += ch;
         }
         else {
