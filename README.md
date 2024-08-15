@@ -10,7 +10,7 @@ The project implements tree classic encryption algorithms:
 
 ## Usage:
 After running the aplication,you will see the main menu,which allows to perfom various operation:
-1.CESAR
-2.MONOALPHABETIC
-3.AFFINE
+1.CESAR CHIPER
+2.MONOALPHABEIC CHIPER
+3.AFFINE CHIPER
 4.EXIT
